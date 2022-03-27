@@ -35,6 +35,7 @@ h6 {
 a { 
     color: var(--body);
     text-decoration: none;
+    transition: all 0.4s ease;
 }
 
 a:hover { color: var(--brand);}
@@ -84,6 +85,13 @@ section {
     margin: auto;
 }
 
+.cta-btns {
+    margin-top: 3.75rem
+}
+.dot {
+    color: var(--brand);
+}
+
 /* ==========  NAVBAR ==========  */
 .navbar {
     background: linear-gradient(to bottom, #1B1F34, rgba(27, 31, 52, 0.2))
@@ -105,6 +113,9 @@ section {
     min-height: 100vh;
     background-position: center;
     background-size: cover;
+
+    display: flex;
+    align-items: center;
 }
 
 #hero p {
@@ -169,18 +180,208 @@ section {
     width: unset;
 }
 
-/* ==========  SERVICES ==========  */
-#services {
+/* ==========  PRODUCTS ==========  */
+#products {
     background-color: var(--bg2);
 }
 
-#services .service .content {
+#products .product .content {
     padding: 2rem;
 }
 
-#services .service p {
+#products .product p {
     margin-top: 1.125rem;
     margin-bottom: 1.125rem;
+}
+
+/* ==========  MILESTONE ==========  */
+#milestone {
+    background: linear-gradient(to right, rgba(27, 31, 52, 0.8), rgba(27, 31, 52, 0.8)), url(../img/cover_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#milestone h1 {
+    color: var(--brand);
+}
+
+/* ==========  FEATURES ==========  */
+#features {
+    background-color: var(--bg1);
+}
+
+.feature {
+    display: flex;
+}
+
+.feature .feature-icon {
+    font-size: 2.25rem;
+    color: var(--brand);
+    line-height: 1;
+    margin-right:  1rem;
+}
+
+.feature p {
+    font-size: .875rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+/* ==========  SOCIAL ICONS ==========  */
+.social-links a {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--bg2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a:hover {
+    background-color: var(--brand);
+}
+
+/* ==========  TEAM ==========  */
+#team {
+    background-color: var(--bg2);
+}
+
+.team-member {
+    position: relative;
+}
+
+.team-member .social-links {
+    position: absolute;
+    top: 0rem;
+    right: 1.875rem;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.team-member:hover .social-links {
+    opacity: 1;
+    top: 1.875rem;
+}
+
+/* ==========  TESTIMONIALS ==========  */
+#testimonials {
+    background-color: var(--bg1);
+}
+
+.review {
+    padding: 32px;
+    background-color: var(--bg2);
+    position: relative;
+}
+
+.review .icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--brand);
+    color: var(--bg1);
+    border-radius: 100px;
+    position: absolute;
+    right: 2rem;
+}
+
+.review img {
+    width: 60px;
+    border-radius: 100px;
+}
+
+/* ==========  BLOG ==========  */
+#blog {
+    background-color: var(--bg2);
+}
+
+.blog-post {
+    position: relative;
+}
+
+.blog-post .date {
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: var(--brand);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 1.875rem;
+    left: 1.875rem;
+}
+
+.blog-post .day {   
+    font-size: 2rem;
+    line-height: 1;
+    font-family: "Dela Gothic One", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--bg1);
+}
+
+.blog-post .year {
+    color: var(--bg1);
+}
+
+/* ==========  FORM ==========  */
+#booking {
+    background: linear-gradient(to right, rgba(27, 31, 52, 0.8), rgba(27, 31, 52, 0.8)), url(../img/cover_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#booking form {
+    background-color: var(--bg1);
+    padding: 2rem;
+}
+
+#booking form .form-control {
+    background-color: var(--bg2);
+    margin-top: 1rem;
+    border-radius: 0;
+    border-color: var(--bg2);
+    border: .125rem solid var(--bg2);
+    color: var(--body);
+}
+
+#booking form input {
+    height: 3.625rem;
+}
+
+#booking form .form-control:focus {
+    box-shadow: none;
+    border-left-color: var(--brand) ;
+}
+
+
+/* ==========  FOOTER ==========  */
+footer {
+    padding-top: 10rem;
+}
+
+footer .social-links {
+    display: flex;
+}
+
+footer .social-links a {
+    margin-right: .3125rem;
+}
+
+.footer-top {
+    padding-bottom: 1.875rem;
+}
+
+.footer-bottom {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    border-top: .0625rem solid var(--bg2);
 }
 
 
